@@ -1,15 +1,20 @@
 function Hero() {
   return (
-    <section>
-      <h1>Hola, soy Molly 👋</h1>
+    <section id="inicio" className="hero">
+      <p className="saludo">👋 Hola, soy</p>
 
-      <h2>Desarrolladora Web Frontend</h2>
+      <h1>Molly Venegas</h1>
 
-      <p>
-        Estoy aprendiendo React para crear páginas web modernas.
+      <h2>Desarrolladora Frontend</h2>
+
+      <p className="descripcion">
+        Desarrollo aplicaciones web modernas utilizando React, JavaScript, HTML y CSS.
       </p>
 
-      <button>Ver proyectos</button>
+      <div className="hero-buttons">
+        <button>Ver proyectos</button>
+        <button>Contacto</button>
+      </div>
     </section>
   );
 }

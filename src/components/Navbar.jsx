@@ -1,14 +1,15 @@
 function Navbar() {
   return (
-    <nav>
-      <h2>MV</h2>
+    <nav className="navbar">
+      <h2 className="logo">MV</h2>
 
-      <ul>
-        <li>Inicio</li>
-        <li>Sobre mí</li>
-        <li>Proyectos</li>
-        <li>Contacto</li>
-      </ul>
+    <ul className="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
     </nav>
   );
 }
