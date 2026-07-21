@@ -9,12 +9,10 @@
 .hero-container {
   max-width: 1200px;
   width: 100%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 60px;
-
   margin: 0 auto;
 }
 
@@ -28,10 +26,12 @@
   justify-content: center;
 }
 
+/* ---------- Texto ---------- */
+
 .saludo {
   font-size: 20px;
-  color: var(--color-primary);
   font-weight: bold;
+  color: var(--color-primary);
   margin-bottom: 15px;
 }
 
@@ -55,25 +55,45 @@
   margin-bottom: 40px;
 }
 
+/* ---------- Botones ---------- */
+
 .hero-buttons {
   display: flex;
   gap: 20px;
 }
 
 .hero button {
-  background: var(--color-primary);
-  color: white;
-  border: none;
   padding: 15px 35px;
   border-radius: 10px;
   font-size: 18px;
+  cursor: pointer;
   transition: var(--transition);
 }
 
-.hero button:hover {
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
   background: var(--color-primary-hover);
   transform: translateY(-3px);
 }
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-text);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-secondary:hover {
+  background: var(--color-primary);
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* ---------- Tarjeta ---------- */
 
 .tech-card {
   width: 100%;
@@ -82,33 +102,50 @@
   padding: 30px;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
-}
-
-.tech-card h3 {
-  color: var(--color-primary);
-  margin-bottom: 20px;
-  font-size: 28px;
-}
-
-.tech-card ul {
-  list-style: none;
-}
-
-.tech-card li {
-  font-size: 20px;
-  margin-bottom: 18px;
-  color: var(--color-text);
+  transition: var(--transition);
 }
 
 .tech-card:hover {
   transform: translateY(-8px);
-  transition: var(--transition);
 }
 
+.tech-card h3 {
+  font-size: 28px;
+  color: var(--color-primary);
+  margin-bottom: 25px;
+}
+
+.tech-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.tech-card li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  color: var(--color-text);
+}
+
+.tech-card li svg {
+  font-size: 28px;
+  color: var(--color-primary);
+}
+
+/* ---------- Responsive ---------- */
+
 @media (max-width: 900px) {
+  .hero {
+    padding: 60px 8%;
+  }
+
   .hero-container {
     flex-direction: column;
     text-align: center;
+    gap: 50px;
   }
 
   .descripcion {
@@ -117,6 +154,11 @@
 
   .hero-buttons {
     justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-right {
+    width: 100%;
   }
 
   .hero h1 {
@@ -127,7 +169,35 @@
     font-size: 30px;
   }
 
-  .hero-right {
+  .descripcion {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .descripcion {
+    font-size: 18px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero button {
     width: 100%;
+    max-width: 280px;
+  }
+
+  .tech-card {
+    max-width: 100%;
   }
 }

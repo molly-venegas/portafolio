@@ -1,4 +1,12 @@
 import "../../styles/Hero.css";
+import {
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaGitAlt,
+} from "react-icons/fa";
+
+import { SiJavascript } from "react-icons/si";
 
 function Hero() {
   return (
@@ -17,8 +25,8 @@ function Hero() {
           </p>
 
           <div className="hero-buttons">
-            <button>Ver proyectos</button>
-            <button>Contacto</button>
+            <button className="btn-primary">Ver proyectos</button>
+            <button className="btn-secondary">Contacto</button>
           </div>
         </div>
 
@@ -26,13 +34,13 @@ function Hero() {
           <div className="tech-card">
             <h3>Tecnologías</h3>
 
-            <ul>
-              <li>⚛️ React</li>
-              <li>🟨 JavaScript</li>
-              <li>🌐 HTML</li>
-              <li>🎨 CSS</li>
-              <li>🔧 Git & GitHub</li>
-            </ul>
+          <ul>
+            <li><FaReact /> React</li>
+            <li><SiJavascript /> JavaScript</li>
+            <li><FaHtml5 /> HTML</li>
+            <li><FaCss3Alt /> CSS</li>
+            <li><FaGitAlt /> Git & GitHub</li>
+          </ul>
           </div>
         </div>
 
