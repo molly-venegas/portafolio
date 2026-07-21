@@ -1,0 +1,13 @@
+#contacto {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#contacto h2 {
+  margin-bottom: 20px;
+}
+
+#contacto p {
+  margin: 15px 0;
+  font-size: 20px;
+}

@@ -1,0 +1,13 @@
+#sobre-mi {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#sobre-mi h2 {
+  margin-bottom: 20px;
+}
+
+#sobre-mi p {
+  margin: 20px 0;
+  font-size: 20px;
+}

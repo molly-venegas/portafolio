@@ -1,0 +1,21 @@
+#habilidades {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#habilidades ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+  list-style: none;
+}
+
+#habilidades li {
+  background: #ff6600;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
