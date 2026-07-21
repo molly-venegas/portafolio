@@ -3,19 +3,39 @@ import "../../styles/Hero.css";
 function Hero() {
   return (
     <section id="inicio" className="hero">
-      <p className="saludo">👋 Hola, soy</p>
+      <div className="hero-container">
 
-      <h1>Molly Venegas</h1>
+        <div className="hero-left">
+          <p className="saludo">👋 Hola, soy</p>
 
-      <h2>Desarrolladora Frontend</h2>
+          <h1>Molly Venegas</h1>
 
-      <p className="descripcion">
-        Desarrollo aplicaciones web modernas utilizando React, JavaScript, HTML y CSS.
-      </p>
+          <h2>Desarrolladora Frontend</h2>
 
-      <div className="hero-buttons">
-        <button>Ver proyectos</button>
-        <button>Contacto</button>
+          <p className="descripcion">
+            Desarrollo aplicaciones web modernas utilizando React, JavaScript, HTML y CSS.
+          </p>
+
+          <div className="hero-buttons">
+            <button>Ver proyectos</button>
+            <button>Contacto</button>
+          </div>
+        </div>
+
+        <div className="hero-right">
+          <div className="tech-card">
+            <h3>Tecnologías</h3>
+
+            <ul>
+              <li>⚛️ React</li>
+              <li>🟨 JavaScript</li>
+              <li>🌐 HTML</li>
+              <li>🎨 CSS</li>
+              <li>🔧 Git & GitHub</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </section>
   );
