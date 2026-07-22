@@ -80,33 +80,20 @@
 
 .project-image {
   height: 220px;
+  overflow: hidden;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background: linear-gradient(
-    135deg,
-    rgba(249, 115, 22, 0.12),
-    rgba(255, 255, 255, 0.02)
-  );
-
-  font-size: 28px;
-  font-weight: bold;
-  color: var(--color-primary);
+  background: #111827;
 }
 
 .project-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: var(--transition);
-}
+  object-position: top;
+  display: block;
 
-.project-card:hover .project-image img {
-  transform: scale(1.05);
+  transition: transform 0.4s ease;
 }
-
 /* ---------- Contenido ---------- */
 
 .project-content {

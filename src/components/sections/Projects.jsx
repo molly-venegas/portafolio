@@ -1,30 +1,24 @@
 import "../../styles/Projects.css";
-
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
+
+import phoenix from "../../assets/projects/sporting-phoenix.png";
+import dulces from "../../assets/projects/dulces-artesanales.png";
 
 function Projects() {
   const projects = [
     {
-      title: "Portafolio Personal",
-      description:
-        "Portafolio desarrollado con React, Vite y CSS moderno.",
-      technologies: ["React", "CSS", "Vite"],
-      github: "#",
-      demo: "#",
-    },
-    {
+      image: phoenix,
       title: "Sporting Phoenix",
-      description:
-        "Sitio web para un club de futsal con información, contacto y formulario.",
+      description: "Sitio web para un club de futsal.",
       technologies: ["React", "CSS"],
       github: "#",
       demo: "#",
     },
     {
+      image: dulces,
       title: "Dulces Artesanales",
-      description:
-        "Página web para un emprendimiento de repostería con diseño responsivo.",
+      description: "Sitio web para un emprendimiento de dulces artesanales.",
       technologies: ["HTML", "CSS", "JavaScript"],
       github: "#",
       demo: "#",
@@ -34,7 +28,6 @@ function Projects() {
   return (
     <section id="proyectos" className="projects">
       <div className="projects-container">
-
         <h2>Proyectos</h2>
 
         <p>
@@ -45,13 +38,11 @@ function Projects() {
         <div className="projects-grid">
           {projects.map((project) => (
             <div className="project-card" key={project.title}>
-
               <div className="project-image">
-                Próximamente
+                <img src={project.image} alt={project.title} />
               </div>
 
               <div className="project-content">
-
                 <h3>{project.title}</h3>
 
                 <p>{project.description}</p>
@@ -63,23 +54,28 @@ function Projects() {
                 </div>
 
                 <div className="project-buttons">
-                  <a href={project.demo}>
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FiExternalLink />
                     Demo
                   </a>
 
-                  <a href={project.github}>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaGithub />
                     GitHub
                   </a>
                 </div>
-
               </div>
-
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
